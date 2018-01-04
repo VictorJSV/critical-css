@@ -1,0 +1,13 @@
+{
+  "host" : "https://aptitus.com",
+  "pages": [
+    {
+      "uri"      : "",
+      "fileRoute": "/postulante/home/includes"
+    },
+    {
+      "uri"      : "empresa",
+      "fileRoute": "/empresa/home/includes"
+    }
+  ]
+}
