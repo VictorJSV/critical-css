@@ -1,0 +1,13 @@
+{
+  "host": "https://dev.4a.aptitus.com",
+  "pages": [
+    {
+      "uri"      : "empresa",
+      "fileRoute": "test/modules/home/index.html"
+    }
+  ],
+  "dimensions": [
+    { "height": 736, "width" : 414  },
+    { "height": 678, "width" : 1200 }
+  ]
+}
