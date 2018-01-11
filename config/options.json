@@ -1,9 +1,9 @@
 {
-  "host": "https://dev.4a.aptitus.com",
+  "host": "https://default.domain.com",
   "pages": [
     {
       "uri"      : "empresa",
-      "fileRoute": "test/fixtures/home/index.html"
+      "fileRoute": "/fixtures/home/index.html"
     }
   ],
   "dimensions": [

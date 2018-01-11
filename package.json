@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha test/index.js",
+    "test": "nyc mocha test/index.js --timeout=3000",
     "build": "docker build -t micro-critical-css:1.0 ."
   },
   "author": "",
