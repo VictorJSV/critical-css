@@ -3,7 +3,7 @@
   "pages": [
     {
       "uri"      : "empresa",
-      "fileRoute": "test/modules/home/index.html"
+      "fileRoute": "test/fixtures/home/index.html"
     }
   ],
   "dimensions": [

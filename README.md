@@ -4,13 +4,13 @@ If domains that are **externally restricted**, It is important to give **user pr
 ## How to build ?
 
 ```shell
-docker build -t micro-critical-css:2.2 .
+docker build -t micro-critical-css:1.0 .
 
 ```
 ## How to run ?
 
 ```shell
-docker run -it --rm -v $(pwd)/:/usr/local/app -e ENV=[environment] -w /usr/local/app/lib micro-critical-css:2.2 node index
+docker run -it --rm -v $(pwd)/:/usr/local/app -e ENV=[environment] -w /usr/local/app/lib micro-critical-css:1.0 node index
 
 ```
 > `environment` could be `dev`, `pre`, `prod`
