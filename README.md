@@ -37,7 +37,9 @@ docker run -it --rm -v [project]:/usr/local/app -e ENV=[environment] -e CONFIG=[
 ```
 - [project] is project route, could be `$(pwd)/test`
 - [environment] could be `dev`, `pre`, `prod`
-- [config] is route file where are `environments.js` and `options.json`, could be `/config`
+- [config] is route file where are `environments.js` and `options.json`, could be `/config`. Is not absolute route, this starts from the base of your project
+
+> If is `prod` scrape won't do, only will inject the css file into html. For this reason it's important that CSS file exist. This CSS file contents critical styles.
 
 ## How to build ?
 

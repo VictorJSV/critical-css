@@ -160,6 +160,10 @@ exports.runCriticalFactory = function (config, environment, environments) {
 };
 
 exports.runCriticalProdFactory = function (config) {
+  if (!config || !config.pages.length) {
+    throw new TypeError(`[${PLUGIN_NAME}] Something wrong :C !, config is invalid`);
+  }
+
   config.pages.map((page) => {
     const pathParse = getPathParse(page);
     console.info(`[${PLUGIN_NAME}] Initializing page for route '${pathParse.dir}'`);
