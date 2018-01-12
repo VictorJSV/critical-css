@@ -1,8 +1,9 @@
 "use strict";
-const expect   = require("chai").expect;
-const critical = require("../lib/critical");
-const config = require("../config/options");
-const environments = require("../config/environments");
+
+const expect       = require("chai").expect;
+const critical     = require("../task/lib/critical");
+const config       = require("./config/options");
+const environments = require("./config/environments");
 
 let params = {};
 

@@ -1,10 +1,16 @@
+/**
+ * Module to build critical CSS
+ *
+ * @author Victor Sandoval and Claudia Valdivieso
+ *
+ */
+const PLUGIN_NAME    = "Critical CSS";
+const PATH_BASE      = "/usr/local/app";
 const fs             = require("fs");
 const path           = require("path");
 const puppeteer      = require("puppeteer");
 const critical       = require("critical");
 const inlineCritical = require("./inline-critical");
-const PLUGIN_NAME    = "Critical CSS";
-const PATH_BASE      = "/test"; // /usr/local/app
 
 let getConfigEnv = function (config, environment, environments) {
   let host = environments[environment];

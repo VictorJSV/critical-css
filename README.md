@@ -5,12 +5,16 @@ If domains that are **externally restricted**, It is important to give **user pr
 
 ```shell
 docker build -t micro-critical-css:1.0 .
-
 ```
 ## How to run ?
 
 ```shell
-docker run -it --rm -v $(pwd)/:/usr/local/app -e ENV=[environment] -w /usr/local/app/lib micro-critical-css:1.0 node index
-
+docker run -it --rm -v $(pwd)/test:/usr/local/app -e ENV=[environment] -e CONFIG=/usr/local/app/config micro-critical-css:1.0 node index
 ```
 > `environment` could be `dev`, `pre`, `prod`
+
+## How to run test ?
+```shell
+yarn install
+npm test
+```

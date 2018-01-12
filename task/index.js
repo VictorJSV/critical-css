@@ -1,6 +1,6 @@
 const criticalFactory = require("./lib/critical");
-const config          = require("./config/options");
-const environments    = require("./config/environments");
+const config          = require(process.env.CONFIG + "/options");
+const environments    = require(process.env.CONFIG + "/environments");
 
 (function(environment){
   if (environment === "prod"){

@@ -21,8 +21,12 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends \
     && apt-get purge --auto-remove -y curl \
     && rm -rf /src/*.deb
 
-COPY package.json $USR_LOCAL/package.json
-COPY yarn.lock $USR_LOCAL/yarn.lock
+COPY task/ $USR_LOCAL
+COPY package.json $USR_LOCAL
+COPY yarn.lock $USR_LOCAL
 
 RUN cd $USR_LOCAL && \
     yarn install
+
+WORKDIR $USR_LOCAL
+VOLUME $APP_DIR
