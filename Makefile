@@ -1,7 +1,7 @@
 
 # Global variables
 ENV          = foo
-CONFIG_FILE  = /usr/local/app/config
+CONFIG_FILE  = /config
 DOCKER_IMAGE = micro-critical-css:1.0
 COMMAND      = node index
 
